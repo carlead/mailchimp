@@ -1,0 +1,23 @@
+{
+    "name": "carlead/mailchimp-bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "description": "Mailchimp V2.0 API Object Oriented wrapper",
+    "keywords": ["mailchimp","api","newsletter","http client", "curl"],
+    "autoload": {
+        "psr-0": { "Carlead\\MailchimpBundle": "" }
+    },
+    "target-dir": "Carlead/MailchimpBundle",
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "~2.0|~3.0|~4.0",
+        "kriswallsmith/buzz":">=0.7",
+        "ext-curl": "*"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.1-dev"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+parameters:
+    mailchimp.class: Carlead\MailchimpBundle\Mailchimp\MailChimp
+
+services:
+    mailchimp:
+      class: '%mailchimp.class%'
+      arguments: ['%mailchimp.config%']
+      public: true
+    
+    Carlead\MailchimpBundle\Mailchimp\MailChimp: '@mailchimp'
